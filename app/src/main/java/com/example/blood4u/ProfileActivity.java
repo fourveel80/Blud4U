@@ -38,7 +38,7 @@ import com.squareup.picasso.Picasso;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class profile_activity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigation;
     Button signoutbutton;
     private static int RESULT_LOAD_IMG = 1;
@@ -70,7 +70,7 @@ public class profile_activity extends AppCompatActivity {
         try {
             databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         } catch (RuntimeException e) {
-            Toast.makeText(profile_activity.this, "Profile has not yet been created",
+            Toast.makeText(ProfileActivity.this, "Profile has not yet been created",
                     Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
@@ -78,7 +78,7 @@ public class profile_activity extends AppCompatActivity {
         try {
             storageReference = firebaseStorage.getReference();
         } catch (RuntimeException e) {
-            Toast.makeText(profile_activity.this, "Profile has not yet been created",
+            Toast.makeText(ProfileActivity.this, "Profile has not yet been created",
                     Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
@@ -110,13 +110,13 @@ public class profile_activity extends AppCompatActivity {
                     textViewemailname = (TextView) findViewById(R.id.textViewEmailAdress);
                     textViewemailname.setText(user.getEmail());
                 } catch (NullPointerException e) {
-                    Toast.makeText(profile_activity.this, "Cannot Find Profile Please Re sign in again.",
+                    Toast.makeText(ProfileActivity.this, "Cannot Find Profile Please Re sign in again.",
                             Toast.LENGTH_SHORT).show();
                 }
             }
             @Override
             public void onCancelled( DatabaseError databaseError) {
-                Toast.makeText(profile_activity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ProfileActivity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -162,15 +162,15 @@ public class profile_activity extends AppCompatActivity {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.navigation_home:
-                            Intent home_intent = new Intent(profile_activity.this,ChoosetypeActivity.class);
+                            Intent home_intent = new Intent(ProfileActivity.this,HomeActivity.class);
                             startActivity(home_intent);
                             break;
                         case R.id.navigation_search:
-                            Intent search_intent = new Intent(profile_activity.this, Search1Activity.class);
+                            Intent search_intent = new Intent(ProfileActivity.this, HomeActivity.class);
                             startActivity(search_intent);
                             break;
                         case R.id.navigation_Profile:
-                            Intent profile_intent = new Intent(profile_activity.this, profile_activity.class);
+                            Intent profile_intent = new Intent(ProfileActivity.this, ProfileActivity.class);
                             startActivity(profile_intent);
                             break;
 

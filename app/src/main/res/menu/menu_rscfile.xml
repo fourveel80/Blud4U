@@ -10,7 +10,7 @@
         android:title="Home" />
     <!--placeholder,might be changed in the future-->
     <item
-        android:id="@+id/navigation_search"
+        android:id="@+id/navigation_setting"
         android:icon="@drawable/settings"
         android:title="Settings" />
     <!--placeholder,might be changed in the future-->

@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3b6cff"
+    android:background="#E9967A"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         >
         <ImageView
-            android:background="#3b6cff"
+            android:background="#E9967A"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp" />
@@ -29,7 +29,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_centerHorizontal="true"
-        android:background=""
+        android:background="#ffff"
         android:padding="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -43,7 +43,6 @@
         <EditText
             android:id="@+id/user"
             android:drawablePadding="20dp"
-            android:drawableLeft=""
             android:hint="Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -55,7 +54,6 @@
         <EditText
             android:id="@+id/pass"
             android:drawablePadding="20dp"
-            android:drawableLeft=""
             android:hint="******"
             android:inputType="textPassword"
             android:layout_width="match_parent"

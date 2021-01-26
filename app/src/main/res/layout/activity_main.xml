@@ -88,12 +88,13 @@
 
     <ImageView
         android:id="@+id/imageVIew"
-        android:layout_marginTop="-0dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="5dp"
         android:layout_centerHorizontal="true"
         android:padding="5dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="100dp"
+        android:src="@drawable/blooddrop"/>
 
     <TextView
         android:textSize="20sp"

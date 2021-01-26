@@ -23,7 +23,7 @@
             android:background="@color/colorAccent"
             app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"/>
-            //app:menu="@menu/menu" />
+            app:menu="@menu/menu" />
         <!--bottomnavigationbar copy ends from here-->
         <ScrollView
 

@@ -7,12 +7,9 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Base64;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,7 +32,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -165,7 +161,7 @@ public class ProfileActivity extends AppCompatActivity {
                             Intent home_intent = new Intent(ProfileActivity.this,HomeActivity.class);
                             startActivity(home_intent);
                             break;
-                        case R.id.navigation_search:
+                        case R.id.navigation_setting:
                             Intent search_intent = new Intent(ProfileActivity.this, HomeActivity.class);
                             startActivity(search_intent);
                             break;

@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
                             startActivity(profile_intent);
                             break;
 
-                        // not finished
+                        // unfinished
                     }
                     return false;
                 }

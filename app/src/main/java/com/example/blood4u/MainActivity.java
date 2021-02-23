@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user) {
-        //    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             // Name, email address, and profile photo Url
             // Intent to change pages

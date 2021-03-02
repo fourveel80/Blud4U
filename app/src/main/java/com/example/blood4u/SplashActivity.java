@@ -17,6 +17,7 @@ public class SplashActivity extends AppCompatActivity {
     ImageView ivTop,ivlogo,ivBeat,ivBottom;
     TextView text;
     CharSequence charSequence;
+    int splashDuration = 3000;
     int index;
     long delay = 200;
     Handler handler = new Handler();
@@ -60,7 +61,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, splashDuration);
 
     }
 

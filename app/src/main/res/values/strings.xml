@@ -28,6 +28,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="enter_your_blood_type">Enter your blood type</string>
+    <string name="enter_your_birth_day">Enter your birth day</string>
+    <string name="enter_your_blood_donate">Enter your number of blood donation</string>
+
+
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>

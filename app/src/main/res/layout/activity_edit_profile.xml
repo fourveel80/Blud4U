@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp">
         <LinearLayout
-            android:background="@drawable/bgapps"
+            android:background="@drawable/gg"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:orientation="vertical">
@@ -97,15 +97,52 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/call"/>
+                android:src="@drawable/birthday"/>
             <EditText
-                android:id="@+id/EditTextPhoneNo"
+                android:id="@+id/EditTextBirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/enter_your_phone_number"
+                android:hint="@string/enter_your_birth_day"
                 android:inputType="number"/>
         </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/blood"/>
+        <EditText
+            android:id="@+id/EditTextBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_blood_type"
+            android:inputType="number"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/blooddonationi"/>
+            <EditText
+                android:id="@+id/EditTextBloodDoante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_your_blood_donate"
+                android:inputType="number"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_marginTop="25dp"
             android:orientation="horizontal"
@@ -128,9 +165,8 @@
 
     <Button
         android:id="@+id/btnSaveButton"
-
         android:textColor="@color/white"
-        android:background="@drawable/buttonstyle"
+        android:background="#E9967A"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"

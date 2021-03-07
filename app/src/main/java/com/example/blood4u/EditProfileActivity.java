@@ -45,7 +45,9 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private DatabaseReference databaseReference;
     private EditText editTextName;
     private EditText editTextSurname;
-    private EditText editTextPhoneNo;
+    private EditText EditTextBirth;
+    private EditText EditTextBloodType;
+    private EditText EditTextBloodDoante;
     private ImageView profileImageView;
     private FirebaseStorage firebaseStorage;
     private static int PICK_IMAGE = 123;
@@ -79,7 +81,10 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         databaseReference = FirebaseDatabase.getInstance().getReference();
         editTextName = (EditText)findViewById(R.id.EditTextName);
         editTextSurname = (EditText)findViewById(R.id.EditTextSurname);
-        editTextPhoneNo = (EditText)findViewById(R.id.EditTextPhoneNo);
+        EditTextBirth = (EditText)findViewById(R.id.EditTextBirth);
+        EditTextBloodType = (EditText)findViewById(R.id.EditTextBloodType);
+        EditTextBloodDoante = (EditText)findViewById(R.id.EditTextBloodDoante);
+
         btnsave=(Button)findViewById(R.id.btnSaveButton);
         FirebaseUser user=firebaseAuth.getCurrentUser();
         btnsave.setOnClickListener(this);
@@ -102,8 +107,10 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private void userInformation(){
         String name = editTextName.getText().toString().trim();
         String surname = editTextSurname.getText().toString().trim();
-        String phoneno = editTextPhoneNo.getText().toString().trim();
-        Userinformation userinformation = new Userinformation(name, surname, phoneno);
+        String birthday = EditTextBirth.getText().toString().trim();
+        String bloodtype = EditTextBloodType.getText().toString().trim();
+        String blooddonate = EditTextBloodDoante.getText().toString().trim();
+        Userinformation userinformation = new Userinformation(name, surname, birthday, bloodtype, blooddonate);
         FirebaseUser user = firebaseAuth.getCurrentUser();
         databaseReference.child(user.getUid()).setValue(userinformation);
         Toast.makeText(getApplicationContext(), "User information updated", Toast.LENGTH_LONG).show();

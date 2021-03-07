@@ -40,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static int RESULT_LOAD_IMG = 1;
 
     private DatabaseReference databaseReference;
-    private TextView profileNameTextView, profileSurnameTextView, profilePhonenoTextView;
+    private TextView profileNameTextView, profileSurnameTextView, profileBirthDayTextView, profileBloodTypeTextView, profileBloodDonationTextView;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     private ImageView profilePicImageView;
@@ -59,7 +59,10 @@ public class ProfileActivity extends AppCompatActivity {
         profilePicImageView = findViewById(R.id.profile_pic_imageView);
         profileNameTextView = findViewById(R.id.profile_name_textView);
         profileSurnameTextView = findViewById(R.id.profile_surname_textView);
-        profilePhonenoTextView = findViewById(R.id.profile_phoneno_textView);
+        profileBirthDayTextView = findViewById(R.id.profile_birthday_textView);
+        profileBloodTypeTextView = findViewById(R.id.profile_bloodtype_textView);
+        profileBloodDonationTextView = findViewById(R.id.profile_blooddonation_textView);
+
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
@@ -102,7 +105,9 @@ public class ProfileActivity extends AppCompatActivity {
                     Userinformation userProfile = dataSnapshot.getValue(Userinformation.class);
                     profileNameTextView.setText(userProfile.getUserName());
                     profileSurnameTextView.setText(userProfile.getUserSurname());
-                    profilePhonenoTextView.setText(userProfile.getUserPhoneno());
+                    profileBirthDayTextView.setText(userProfile.getUserBirthday());
+                    profileBloodTypeTextView.setText(userProfile.getUserbloodtype());
+                    profileBloodDonationTextView.setText(userProfile.getUserblooddonate());
                     textViewemailname = (TextView) findViewById(R.id.textViewEmailAdress);
                     textViewemailname.setText(user.getEmail());
                 } catch (NullPointerException e) {

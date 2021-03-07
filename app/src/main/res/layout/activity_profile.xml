@@ -29,7 +29,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bgapps"
+            android:background="@drawable/dd"
             >
 
             <RelativeLayout
@@ -136,17 +136,58 @@
                             <ImageView
                                 android:layout_width="36dp"
                                 android:layout_height="36dp"
-                                android:src="@drawable/call"
+                                android:src="@drawable/birthday"
                                 android:layout_marginRight="5dp"/>
                             <TextView
-                                android:id="@+id/profile_phoneno_textView"
+                                android:id="@+id/profile_birthday_textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Phone number"
+                                android:text="Birth day"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:textStyle="bold"
                                 />
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="25dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:background="@drawable/tabstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/blood"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/profile_bloodtype_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Blood type"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout><LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:background="@drawable/tabstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/blooddonationi"
+                            android:layout_marginRight="5dp"/>
+                        <TextView
+                            android:id="@+id/profile_blooddonation_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Number of blood donation"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
                         <LinearLayout
                             android:layout_marginTop="25dp"
                             android:orientation="horizontal"
@@ -168,6 +209,7 @@
                                 android:textColor="@color/colorPrimaryDark"
                                 android:textSize="20sp" />
                         </LinearLayout>
+
                     </LinearLayout>
 
 
@@ -179,7 +221,7 @@
                         android:background="@drawable/buttonstyle"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="130dp"
-                        android:layout_marginTop="450dp"
+                        android:layout_marginTop="500dp"
                         android:id="@+id/signoutbutton"/>
 
 

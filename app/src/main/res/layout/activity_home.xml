@@ -31,6 +31,20 @@
 
 
         <!--bottomnavigationbar copy ends here-->
+        <Button
+            android:id="@+id/underblood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/blueCircle"
+            android:fontFamily="@font/opensans_light"
+            android:padding="5dp"
+            android:text="\n InFo"
+            android:textColor="#fff"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/imageVIew"
@@ -53,7 +67,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="100dp"
-            android:text="You Can Donate in"
+            android:text="You Can Donate in....."
             android:textColor="@color/black"
             android:textSize="25dp"
             android:fontFamily="@font/opensans_light"

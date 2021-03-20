@@ -12,10 +12,10 @@
         android:layout_height="match_parent"
         android:background="#ffffff"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="308dp"> <!-- Main content -->
+        tools:layout_editor_absoluteY="308dp">
+        <!-- Main content -->
 
 
-        <!--bottomnavigationbar copy ends here-->
 
 
         <Button
@@ -25,8 +25,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:background="@drawable/information"
-             />
+            android:background="@drawable/info" />
 
         <Button
             android:id="@+id/redBox1"
@@ -35,13 +34,13 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="170dp"
-            android:background="@drawable/redBox"
+            android:background="@drawable/red_box"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="Donaton history"
             android:textColor="#ffff"
-            android:textSize="30dp">
-        </Button>
+            android:textSize="30dp"></Button>
+
         <Button
             android:id="@+id/redBox2"
             android:layout_width="300dp"
@@ -49,13 +48,13 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="250dp"
-            android:background="@drawable/redBox"
+            android:background="@drawable/red_box"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="preparation"
             android:textColor="#ffff"
-            android:textSize="30dp">
-        </Button>
+            android:textSize="30dp"></Button>
+
         <Button
             android:id="@+id/redBox3"
             android:layout_width="300dp"
@@ -63,7 +62,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="330dp"
-            android:background="@drawable/redBox"
+            android:background="@drawable/red_box"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="property"

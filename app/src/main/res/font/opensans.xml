@@ -3,17 +3,17 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/opensans_regular" />
+        android:font="@font/opensans_light" />
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
         android:font="@font/opensans_italic" />
-    <font
-        android:fontStyle="light"
-        android:fontWeight="400"
-        android:font="@font/opensans_light" />
-    <font
-        android:fontStyle="bold"
-        android:fontWeight="400"
-        android:font="@font/opensans_bold" />
+<!--    <font-->
+<!--        android:fonStyle="light"-->
+<!--        android:fontWeight="400"-->
+<!--        android:font="@font/opensans_light" />-->
+<!--    <font-->
+<!--        android:fontStyle="bold"-->
+<!--        android:fontWeight="400"-->
+<!--        android:font="@font/opensans_bold" />-->
 </font-family>

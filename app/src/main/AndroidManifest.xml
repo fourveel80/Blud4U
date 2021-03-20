@@ -12,30 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
         <activity
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-=======
         <activity android:name=".activity_preparation"></activity>
         <activity android:name=".Info" />
         <activity android:name=".Setting" />
-        <activity
-            android:name=".MainActivity2"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
->>>>>>> abada893eed3cbfaeb540f5d7de06668f82ff82b
         <activity android:name=".ProfileActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".HomeActivity" />
         <activity
             android:name=".MainActivity"
-<<<<<<< HEAD
-            android:label="@string/app_name"></activity>
-=======
-            android:label="@string/app_name" />
->>>>>>> abada893eed3cbfaeb540f5d7de06668f82ff82b
+            android:label="@string/app_name">
+
+    </activity>
+            android:label="@string/app_name"/>
+
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--bottomnavigationbar copy starts here-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp"
+        >
+        <!-- Main content -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#ff0000"
+            app:itemIconTint="#ffffff"
+            app:itemTextColor="#ffffff"
+            app:menu="@menu/menu_rscfile"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <!--bottomnavigationbar copy ends here-->
+
+        <Button
+            android:id="@+id/underblood"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="420dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bluecircle"
+            android:fontFamily="@font/opensans_light"
+            android:padding="5dp"
+            android:text="\n InFo"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/imageVIew"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="225dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blooddrop"
+            android:fontFamily="@font/opensans_light"
+            android:padding="5dp"
+            android:text=" \n \n \n  Donate \n Now"
+            android:textColor="#fff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:text="You Can Donate in....."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:fontFamily="@font/opensans_light"
+            >
+
+        </TextView>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

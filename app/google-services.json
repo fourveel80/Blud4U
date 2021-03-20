@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "42384795755",
+    "project_id": "blood4u-application-692d0",
+    "storage_bucket": "blood4u-application-692d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42384795755:android:422d6732978478cae2e92e",
+        "android_client_info": {
+          "package_name": "com.example.blood4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42384795755-mj6jk9omerga0u84mh6iccr8it0jnrbf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blood4u",
+            "certificate_hash": "3bbfbf14d06c8dffb74048543a325b70a75e0dc7"
+          }
+        },
+        {
+          "client_id": "42384795755-1384rjal0dg25jf9689c5jv7sgk385t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEoJsmp9wNaMYiDLRiLBHrox5lC0IG0MA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42384795755-1384rjal0dg25jf9689c5jv7sgk385t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

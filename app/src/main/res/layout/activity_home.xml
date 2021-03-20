@@ -34,13 +34,13 @@
 
         <Button
             android:id="@+id/underblood"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="163dp"
-            android:layout_marginTop="428dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="420dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/blueCircle"
+            android:background="@drawable/bluecircle"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="\n InFo"

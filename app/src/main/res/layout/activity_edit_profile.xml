@@ -16,7 +16,6 @@
             android:layout_height="350dp"
             android:orientation="vertical">
             <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
 
                 android:clickable="true"
                 app:civ_border_width="3dp"
@@ -41,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/create_profile"
-                android:textColor="@color/black"
+                android:textColor="#D75A4A"
                 android:textStyle="bold"
                 android:textSize="21sp"/>
         </LinearLayout>
@@ -68,7 +67,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName|textCapSentences"
-                android:hint="@string/enter_your_name"/>
+                android:hint="@string/enter_your_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -86,7 +87,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName|textCapSentences"
-                android:hint="Enter your gender"/>
+                android:hint="Enter your gender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -104,7 +107,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/enter_your_birth_day"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
         <LinearLayout
         android:layout_marginTop="25dp"
@@ -122,7 +127,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/enter_your_blood_type"
-            android:inputType="number"/>
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
     </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -140,7 +147,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/enter_your_blood_donate"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -159,7 +168,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text="@string/email_address"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -167,7 +178,7 @@
         android:id="@+id/btnSaveButton"
         android:textColor="@color/white"
         android:background="#E9967A"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

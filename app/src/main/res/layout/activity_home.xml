@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="16dp">
 
 
-        <!--bottomnavigationbar copy ends here-->
+
 
         <Button
             android:id="@+id/underblood"
@@ -64,13 +64,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_top_vector">
+            android:background="@drawable/ic_top_vector"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_bottom_vector">
+            android:background="@drawable/ic_bottom_vector"/>
 
         <TextView
             android:layout_width="wrap_content"

@@ -14,34 +14,42 @@
         android:src="@drawable/ic_top_vector"
         android:layout_marginBottom="168dp"
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="16dp">
-        
+
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/logo"
             android:adjustViewBounds="true"
-            android:src="@drawable/blooddrop"
-            />
+            android:src="@drawable/blooddrop" />
+
         <TextView
+            android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/text_view"
+            android:layout_marginTop="8dp"
             android:text="Blood4U"
-            android:textSize="48sp"
-            android:textStyle="bold"
             android:textColor="#D75A4A"
-            android:layout_marginTop="8dp"/>
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
         <ImageView
+            android:id="@+id/iv_beat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/iv_beat"
-            android:adjustViewBounds="true"/>
+            android:adjustViewBounds="true" />
     </LinearLayout>
 
     <ImageView

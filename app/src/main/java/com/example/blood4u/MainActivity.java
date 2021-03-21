@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "createUserWithEmail:success");
                             startActivity(new Intent(MainActivity.this, EditProfileActivity.class));
                             FirebaseUser user = mAuth.getCurrentUser();
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG2, "createUserWithEmail:failure", task.getException());

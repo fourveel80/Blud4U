@@ -12,17 +12,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/iv_top"
         android:src="@drawable/ic_top_vector"
-        android:layout_marginBottom="168dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
+
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
         android:layout_marginTop="0dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -53,11 +52,11 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/iv_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/iv_bottom"
-        android:adjustViewBounds="true"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_bottom_vector"/>
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_bottom_vector" />
 
 </RelativeLayout>

@@ -20,7 +20,7 @@
 
 
         <Button
-            android:id="@+id/underblood"
+            android:id="@+id/info"
             android:layout_width="150dp"
             android:layout_height="125dp"
             android:layout_centerHorizontal="true"

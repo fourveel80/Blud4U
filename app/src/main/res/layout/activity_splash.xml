@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/blooddrop" />
+            android:src="@drawable/bloodicon" />
 
         <TextView
             android:id="@+id/text_view"

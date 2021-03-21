@@ -43,7 +43,7 @@
             android:background="@drawable/info" />
 
         <Button
-            android:id="@+id/redBox1"
+            android:id="@+id/donationhistory"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
@@ -57,7 +57,7 @@
             android:textSize="30dp"></Button>
 
         <Button
-            android:id="@+id/redBox2"
+            android:id="@+id/preparation"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"

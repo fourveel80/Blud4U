@@ -18,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Button button = findViewById(R.id.dwb);
+        Button buttonInfo = findViewById(R.id.info);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,32 +26,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        buttonInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Info.class);
+                startActivity(intent);
+            }
+        });
     }
-    //bottomnavigationbar copy start from this line
-    BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.navigation_home:
-                            //Intent value change Intent(CurrentActivity.this,HomeActivity.this)
-                            Intent home_intent = new Intent(HomeActivity.this,HomeActivity.class);
-                            startActivity(home_intent);
-                            break;
-                        case R.id.navigation_setting:
-                            //Intent value change Intent(CurrentActivity.this,Activity.this)
-                            Intent search_intent = new Intent(HomeActivity.this, HomeActivity.class);
-                            startActivity(search_intent);
-                            break;
-                        case R.id.navigation_Profile:
-                            Intent profile_intent = new Intent(HomeActivity.this, HomeActivity.class);
-                            startActivity(profile_intent);
-                            break;
-
-                        // unfinished
-                    }
-                    return false;
-                }
-            };
-    //bottomnavigationbar copy finish at this line
 
 }

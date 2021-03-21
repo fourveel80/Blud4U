@@ -33,17 +33,6 @@
             android:text="InFo"
             android:textColor="#fff"
             android:textSize="25dp" />
-
-
-        <Button
-            android:id="@+id/dwb"
-            android:layout_width="40dp"
-            android:layout_height="39dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/list"
-            />
-
         <Button
             android:id="@+id/imageVIew"
             android:layout_width="225dp"

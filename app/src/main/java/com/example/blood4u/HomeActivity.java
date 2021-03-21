@@ -3,6 +3,8 @@ package com.example.blood4u;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,14 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Button button = findViewById(R.id.dwb);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
     }
     //bottomnavigationbar copy start from this line
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

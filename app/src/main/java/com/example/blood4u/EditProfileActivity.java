@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -55,6 +56,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     private StorageReference storageReference;
 
     public EditProfileActivity() {
+
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -69,6 +71,7 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,7 +119,8 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
         Toast.makeText(getApplicationContext(), "User information updated", Toast.LENGTH_LONG).show();
 
     }
-    @Override
+
+        @Override
     public void onClick(View view) {
         if (view==btnsave){
             if (imagePath == null) {

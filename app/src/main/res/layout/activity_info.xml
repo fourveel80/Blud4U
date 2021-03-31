@@ -12,11 +12,26 @@
         android:layout_height="match_parent"
         android:background="#ffffff"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="308dp"> <!-- Main content -->
+        tools:layout_editor_absoluteY="308dp">
+        <!-- Main content -->
 
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="120dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_bottom_vector" />
 
-        <!--bottomnavigationbar copy ends here-->
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_top"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_top_vector"/>
 
         <Button
             android:id="@+id/infomation"
@@ -24,53 +39,38 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/information"
-             />
+            android:layout_marginTop="90dp"
+            android:background="@drawable/info" />
 
         <Button
-            android:id="@+id/redBox1"
+            android:id="@+id/donationhistory"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="170dp"
-            android:background="@drawable/redBox"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/rounded_corner"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="Donaton history"
             android:textColor="#ffff"
-            android:textSize="30dp">
-        </Button>
+            android:textSize="30dp"></Button>
+
         <Button
-            android:id="@+id/redBox2"
+            android:id="@+id/preparation"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="250dp"
-            android:background="@drawable/redBox"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/rounded_corner"
             android:fontFamily="@font/opensans_light"
             android:padding="5dp"
             android:text="preparation"
             android:textColor="#ffff"
-            android:textSize="30dp">
-        </Button>
-        <Button
-            android:id="@+id/redBox3"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="330dp"
-            android:background="@drawable/redBox"
-            android:fontFamily="@font/opensans_light"
-            android:padding="5dp"
-            android:text="property"
-            android:textColor="#ffff"
-            android:textSize="30dp">
+            android:textSize="30dp"></Button>
 
-        </Button>
+
 
 
     </FrameLayout>
